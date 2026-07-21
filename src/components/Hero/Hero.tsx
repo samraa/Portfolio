@@ -42,7 +42,12 @@ Passionate Software Engineer with over 10 years of experience delivering enterpr
 
 <div className="buttons">
 
-<a href="/Resume.pdf">
+<a
+  href={`${import.meta.env.BASE_URL}Resume.pdf`}
+  download
+>
+  Download CV
+</a>
 
 <button>
 
@@ -50,7 +55,7 @@ Download CV
 
 </button>
 
-</a>
+
 
 <a href="#contact">
 
