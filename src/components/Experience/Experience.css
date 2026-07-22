@@ -1,0 +1,147 @@
+.experience {
+  padding: 100px 8%;
+  background: #111827;
+  color: white;
+}
+
+.experience h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 70px;
+  color: #38bdf8;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Center Line */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background: #38bdf8;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Timeline Item */
+.container {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+/* Left Side */
+.container:nth-child(odd) {
+  left: 0;
+  padding-right: 60px;
+}
+
+/* Right Side */
+.container:nth-child(even) {
+  left: 50%;
+  padding-left: 60px;
+}
+
+/* Timeline Dot */
+.container::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #38bdf8;
+  border-radius: 50%;
+  top: 35px;
+  z-index: 2;
+}
+
+.container:nth-child(odd)::before {
+  right: -9px;
+}
+
+.container:nth-child(even)::before {
+  left: -9px;
+}
+
+/* Card */
+.content {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 16px;
+  transition: 0.3s;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.content:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+}
+
+.content h3 {
+  color: #38bdf8;
+  margin-bottom: 8px;
+}
+
+.content h4 {
+  margin: 0;
+}
+
+.content span {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.content ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.content li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Technology Badges */
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tech span {
+  background: #38bdf8;
+  color: #000;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .timeline::after {
+    left: 25px;
+    transform: none;
+  }
+
+  .container {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 70px;
+    padding-right: 20px;
+  }
+
+  .container::before {
+    left: 16px;
+    right: auto;
+  }
+}

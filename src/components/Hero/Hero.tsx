@@ -1,4 +1,8 @@
 import "./Hero.css";
+import profile from "../../assets/images/profile.png";
+import { TypeAnimation } from "react-type-animation";
+import { FaCircle } from "react-icons/fa";
+
 
 function Hero(){
 
@@ -8,19 +12,44 @@ return(
 
 <div className="left">
 
-<p className="welcome">
+{/* <p className="welcome">
 
 Hello, I'm
 
-</p>
+</p> */}
+<div className="availability">
+  <FaCircle className="status" />
+  <span>Available for Opportunities</span>
+</div>
 
-<h1>
+<h1>Sumra Ahmed</h1>
+
+<div className="designation">
+  <TypeAnimation
+    sequence={[
+      "Business Analyst",
+      2000,
+      "Application Support Engineer",
+      2000,
+      "Angular Developer",
+      2000,
+      "ERP Support Specialist",
+      2000,
+      "Frontend Developer",
+      2000,
+    ]}
+    wrapper="span"
+    speed={50}
+    repeat={Infinity}
+  />
+</div>
+{/* <h1>
 
 Sumra Ahmed
 
-</h1>
+</h1> */}
 
-<h2>
+{/* <h2>
 
 Business Analyst
 
@@ -32,7 +61,7 @@ Application Support Engineer
 
 Angular Developer
 
-</h2>
+</h2> */}
 
 <p>
 
@@ -73,7 +102,7 @@ Contact Me
 
 <div className="right">
 
-<img src="/profile.png"/>
+ <img src={profile} alt="Sumra Ahmed" />
 
 </div>
 
