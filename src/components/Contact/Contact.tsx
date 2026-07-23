@@ -52,6 +52,7 @@ function Contact() {
               <h3>Phone</h3>
 
               <p>+92 334 5442675</p>
+              <p>+971 54 372 2441</p>
 
             </div>
 
@@ -73,7 +74,7 @@ function Contact() {
 
           <div className="socials">
 
-            <a href="#">
+            <a href="https://www.linkedin.com/in/samra-ahmed-418948167/">
               <FaLinkedin/>
             </a>
 
@@ -91,12 +92,12 @@ function Contact() {
 
           <input
             type="text"
-            placeholder="Your Name"
+            placeholder="Sumra Ahmed"
           />
 
           <input
             type="email"
-            placeholder="Your Email"
+            placeholder="sumraahmed1990@gmail.com"
           />
 
           <input
